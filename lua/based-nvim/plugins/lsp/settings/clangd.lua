@@ -1,0 +1,3 @@
+-- clangd specific configuration
+
+return {}
