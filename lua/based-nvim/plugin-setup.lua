@@ -46,6 +46,14 @@ return packer.startup(function(use)
         end,
     }
 
+    -- transparent
+    use {
+        'xiyaowong/nvim-transparent',
+        config = function()
+            require('based-nvim.plugins.transparent')
+        end,
+    }
+
     -- comments
     use {
         'numToStr/Comment.nvim',
@@ -62,16 +70,14 @@ return packer.startup(function(use)
         end,
     }
 
-    -- LSP
+    -- startup screen
     use {
-        'neovim/nvim-lspconfig',
+        'goolord/alpha-nvim',
         requires = {
-            'williamboman/mason.nvim',
-            'williamboman/mason-lspconfig.nvim',
-            'hrsh7th/cmp-nvim-lsp',
+            'nvim-tree/nvim-web-devicons', -- for file icons
         },
-        config = function() 
-            require('based-nvim.plugins.lsp')
+        config = function ()
+            require('based-nvim.plugins.alpha')
         end,
     }
 

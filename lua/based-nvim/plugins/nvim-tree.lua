@@ -52,6 +52,10 @@ nvimtree.setup({
             },
         },
 
+        filters = {
+            exclude = "git",
+        },
+
         indent_markers = {
             enable = true,
         },

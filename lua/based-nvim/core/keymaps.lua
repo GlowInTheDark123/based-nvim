@@ -31,6 +31,9 @@ keymap.set("x", "K", "<cmd>m '<-2<CR>gv=gv")
 
 -- plugin keymaps
 
+-- nvim-transparent
+keymap.set("n", "<leader>b", "<cmd>TransparentToggle<CR>")
+
 -- nvim-tree
 keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<CR>")
 
